@@ -1,0 +1,26 @@
+{
+  "name": "@skolplattformen/hooks",
+  "description": "React hooks for accessing api with cached results",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": "git@github.com:kolplattformen/api-hooks.git",
+  "author": "Johan Öbrink <johan.obrink@gmail.com>",
+  "license": "Apache-2.0",
+  "private": false,
+  "scripts": {
+    "lint": "eslint 'src/**/*.ts' --quiet --fix",
+    "test": "jest",
+    "build": "tsc",
+    "prepare": "yarn build",
+    "publish-package": "npm publish --access public"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "jest": "*"
+  }
+}
